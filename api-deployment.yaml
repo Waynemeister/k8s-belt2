@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: api
-        image: wayne763api-3tier:latest
+        image: wayne7635/api-3tier:latest
         ports:
         - containerPort: 80
