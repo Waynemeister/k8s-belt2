@@ -25,3 +25,10 @@ spec:
           value: admin123
         - name: POSTGRES_DB
           value: basic3tier
+        volumeMounts:
+        - mountPath: /var/lib/postgresql/data
+          name: dbdata
+      volumes:
+      - name: dbdata
+        persistentVolumeClaim:
+          claimName: dbdata-pv-claim          
